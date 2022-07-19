@@ -22,7 +22,10 @@ change lanes and avoid other cars in the lane.
 OUR MODEL :
 1. A video and screenshots of the demo can be seen in this blog post: https://www.osrfoundation.org/simulated-car-demo/
 2. First you need to build the car_demo package:
-    $ mkdir -p osrf_car/src
+ 
+  
+$ mkdir -p osrf_car/src
+    
 $ cd osrf_car/src
 
 $ git clone https://github.com/KshitijBhat/car_demo.git
