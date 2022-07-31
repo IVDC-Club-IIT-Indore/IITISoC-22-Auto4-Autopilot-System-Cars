@@ -1,0 +1,2 @@
+car_demo/car_demo:car_demo/prius_description:car_demo/prius_msgs
+-DCATKIN_DEVEL_PREFIX=/home/aditya/osrf_car/devel -DCMAKE_INSTALL_PREFIX=/home/aditya/osrf_car/install -G Unix Makefiles
