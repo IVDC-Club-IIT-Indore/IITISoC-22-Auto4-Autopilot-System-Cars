@@ -1,21 +1,8 @@
-# Autopilot system for _Tesla_ cars
+# yolo_object_detector
+Object detector in ROS using deep learning in Darknet - Yolo
 
-Mentors: [Yeeshukant Singh](https://github.com/Yeeshukant), [Kshitij Bhat](https://github.com/KshitijBhat)
-Members : [Aditya Suwalka]( https://github.com/git-suwalkaaditya)
-**Description**: While on the highway, the monotonous speed
-control is a bit tiresome for drivers (especially for long
-distances and longer durations). Lane Assist and Adaptive
-Cruise Control (ACC) features can help the drivers in these
-situations. Depending on the actions of other
-objects/vehicles in the car's immediate vicinity, these
-systems can slow down and stop the vehicle when required.
-
-**Specifications**:
-- Computer Vision Pipeline for Lane detection should be
-efficient in detecting the free path on the road.
-- Motion planning and control systems are needed to steer
-the vehicle to have the least cross-track error and
-automatic lane centering.
-- Bonus points for an active obstacle avoidance system to
-change lanes and avoid other cars in the lane.
-
+Steps:
+1) This package uses the proposed standard Vision messages, so clone/download the vision messages package and place it in the catkin workspace. Vision messages package: https://github.com/Kukanani/vision_msgs.git
+2) Clone/Download this repository into your workspace which has two packages: `darknet_ros` and `dn_object_detect` 
+3) RUN `catkin_make`
+4) RUN `roslaunch dn_object_detect objdetect.launch` - (NOTE: This launch file also launches the openni2.launch file for the camera. If you are using any other camera, please change the camera topic in the launch file and uncomment the line that launches the openni camera)
