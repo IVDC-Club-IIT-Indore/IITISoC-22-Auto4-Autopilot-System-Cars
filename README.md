@@ -19,25 +19,3 @@ automatic lane centering.
 - Bonus points for an active obstacle avoidance system to
 change lanes and avoid other cars in the lane.
 
-OUR MODEL :
-1. A video and screenshots of the demo can be seen in this blog post: https://www.osrfoundation.org/simulated-car-demo/
-2. First you need to build the car_demo package:
- 
-  
-$ mkdir -p osrf_car/src
-    
-$ cd osrf_car/src
-
-$ git clone https://github.com/KshitijBhat/car_demo.git
-
-$ cd ..
-
-$ catkin_make
-
-$ source devel/setup.bash
-
-3. Now to run the simulation:
-$ roslaunch car_demo demo.launch
-
-4.To move the car, run the following sample code:
-$ rosrun car_demo move.py
